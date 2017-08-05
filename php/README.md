@@ -1,6 +1,6 @@
 # <?php function styleguide() {
     /* A style guide that will make you go ['hip', 'hip']. */
-    
+
 # Index
 - [PSR Overview](#psr-overview) <a name="properties"></a>
 - [Lines](#lines)
@@ -24,7 +24,7 @@
 - [Casts](#casts)
 - [Comments](#comments)
 - [Strings](#strings)
-    
+
 ## Basic Coding Standards
 When writing PHP, always use a routing framework and a templating language.
 
@@ -233,4 +233,4 @@ No code should be commented out in the master branches.
 
 All strings should use single quotes if they do not use string interpolation. In the event of string interpolation then double quotes are permitted. If you require more advanced data in the string than just a simple variable, consider using the `sprintf` C-style method.
 
-#}
+# }

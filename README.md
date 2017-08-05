@@ -1,9 +1,20 @@
-# alliedcrowds styleguide
-A multilingual styleguide which all AlliedCrowds projects should conform to. The repo also contains some editor configs which should speed up development times considerably.
+# AlliedCrowds StyleGuide
+A multilingual styleguide which all AlliedCrowds projects should conform to. 
 
-* [General Style Guidelines](general-style-guidelines/) - good practices for any language
+* [General Standards](general-standards/) - good practices for any language
+* [Git](git/)
+
+
 * [Javascript](javascript/)
+
 * [PHP](php/)
+
 * [Python](python/)
+
 * [SASS](sass/)
+
 * [HTML](html/)
+
+* [AWS](aws/)
+
+  ​

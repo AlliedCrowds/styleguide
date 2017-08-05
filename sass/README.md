@@ -4,7 +4,7 @@
 
 ## Preliminary
 
-All CSS code written for AlliedCrowds should be using SASS for consistentcy inter-project. Never use `.scss`.
+All CSS code written for AlliedCrowds should be using SASS for consistentcy inter-project. Never use `.scss`. Avoid inline CSS whenever style is used more than once.
 
 ## General Rules - Formatting
 
@@ -29,15 +29,13 @@ width: 10px
 height: 10px
 ```
 
-Do not use IDs.
-
 Prefer dashes over camelCasing when naming classes.
 
-Use hex colour codes `#000`. SASS’ `rgba()` function is overloaded to accept hex colours as a param, e.g., `rgba(#000, .5)`.
+Use hex colour codes `#000`. SASS’s `rgba()` function is overloaded to accept hex colours as a param, e.g., `rgba(#000, .5)`.
 
 Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`.
 
-Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. This greatly improves readability of code.
+Limit use of shorthand declarations to instances where you must explicitly set all the available values. This greatly improves readability of code.
 
 Always use double quotes. Always wrap strings. Including font names. Do not wrap CSS identifiers in quotes (such as `initial` or `sans-serif`). URLs should also be quoted.
 
@@ -66,7 +64,7 @@ Wrap lines to 80 characters. Lines should wrap to under their first parameter.
   @extend .other-class
 ```
 
-Knowing which classes a class inherits from always helps readability of code and also reduces bugs in code. Aim to stray away from @extends, however. If multiple classes and extending the same class, consider mixins.
+Knowing which classes a class inherits from always helps readability of code and also reduces bugs in code. Aim to stray away from @extends, however, if multiple classes and extending the same class, consider mixins.
 
 ## List @includes Next
 
@@ -138,13 +136,13 @@ Again, these should be seperated by a single line break. Nothing goes after the 
 
 ## Never Write Vendor Prefixes
 
-Autoprefixer handles all that for us. Vendor prefixes are old news and slow down development times by a ton.
+Autoprefixer handles all that for us. Vendor prefixes slow down development.
 
 Use @mixins whenever possible given to you by Bourbon.
 
 ## Break Into As Many Small Files As Makes Sense
 
-There is no penalty to splitting into many small files. Do it as much as feels good to the project. I know I find it easier to jump to small specific files and navigate through them than fewer/larger ones.
+There is no penalty to splitting into many small files and this helps the readability of the code
 
 ## Partials are named _partial.scss
 
@@ -154,7 +152,7 @@ Seperate file names using a dash.
 
 ## Be Generous With Comments
 
-Use `//` to comment lines. Do not use end of comment lines. Most code should be self-explanatory but there's times where comments are definitely needed, when using `z-index` for example.
+Use `//` to comment lines. Do not use end of comment lines. Most code should be self-explanatory but there's times where comments are definitely needed, when using `z-index` for example.  Space after `//` and always capitalize first letter.
 
 ## Variablise All Colours
 
