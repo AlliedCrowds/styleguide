@@ -1,4 +1,3 @@
-# JavaScript 
+# JavaScript
 
-- We are using [Reddit's ES6 Guide](https://github.com/reddit/styleguide/tree/master/javascript) as a style guide.
-
+- We are using the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) as a style guide.

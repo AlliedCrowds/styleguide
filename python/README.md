@@ -11,16 +11,16 @@
 
 > A foolish consistency is the hobgoblin of little minds
 
-AlliedCrowds follows [The Pocoo Style Guide](http://www.pocoo.org/internal/styleguide/), which follows [PEP 8](https://www.python.org/dev/peps/pep-0008/). The below amends and overides each.
+AlliedCrowds follows [The Pocoo Style Guide](http://flask.pocoo.org/docs/1.0/styleguide/), which follows [PEP 8](https://www.python.org/dev/peps/pep-0008/). The below amends and overrides each.
 
-Use double quotes `"` around strings that are used for interpolation or that are natural language messages, and single quotes `'` for small symbol-like strings. 
+Use double quotes `"` around strings that are used for interpolation or that are natural language messages, and single quotes `'` for small symbol-like strings.
 
 Example:
 
 ```
 language = {
 
-    'english' : "Hey, what's up"
+    'english' : "Hey, what's up?"
 
     'british' : "Hey, are you alright?"
 
@@ -30,8 +30,3 @@ language = {
 When dealing with a natural language string with quotes, use single quotes.
 
 Docstrings on everything à la [PEP 257](https://www.python.org/dev/peps/pep-0257/)
-
-
-
-
-
