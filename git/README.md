@@ -60,6 +60,11 @@ Used in reviewing PRs. See below section on Pull Requests for more in depth exam
 - `review needed`: Used to indicate that a PR should be reviewed by someone other than the requester.
 - `in progress`: Used to indicate that a PR is being worked on, or that it has been reviewed and rejected.
 
+#### Blocking
+
+- `blocked`: Used when an issue is unable to be addressed before another issue is resolved. The blocking issue must be referenced in the `blocked`
+ issue.
+
 #### Category
 
 These are applied only to issues and are used to group issues within a similar category. They are self-explanatory and will vary by project, some issues may be tagged with multiple of these labels. Examples:
@@ -97,7 +102,7 @@ The following emphasises or overrides where applicable:
   - If you need more than 90 chars to explain your commit, consider using description space to expand upon what has been changed
 - More detailed explanatory text is encouraged if necessary
 - Write in the imperative `Fix bug` not `Fixed bug` or `Fixes bug`, this matches the conventions of git commands `git merge`, `git pull`, etc.
-- No bad commits,  anything that is not succinct and relevant to the code being committed will result in a rejected pull request, causing you to have to rewrite commit messages. 
+- No bad commits,  anything that is not succinct and relevant to the code being committed will result in a rejected pull request, causing you to have to rewrite commit messages.
 
 It's a good idea to include the rationale for a change in the explanatory text for non-trivial changes:
 
@@ -161,6 +166,6 @@ All tags follow our above mentioned versioning system.
 - After one of these branches gets pulled into `master` and the development server is approved, the final merge commit must be tagged with the appropriate version number (the same one that has been bumped when the  branch was created).
 - Content Standards
   - The title of releases will have the first character of each word capitalized.
-  - Bullet points with further explanation will be provided. When in doubt about an explanation, use the commit messages from the commits between this release and the last. 
+  - Bullet points with further explanation will be provided. When in doubt about an explanation, use the commit messages from the commits between this release and the last.
     - Bullet points have one new line in between them, unless they are nested in which case there is no new line between nested bullet
   - Release notes should be succinct and clear to both technical and non technical readers.
