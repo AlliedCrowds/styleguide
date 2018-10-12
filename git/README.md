@@ -94,7 +94,7 @@ Used for asking questions or delivering new information.
 
 Individual commits should be [atomic changes](https://en.wikipedia.org/wiki/Atomic_commit) to the codebase.
 
-- A commit should not leave the code in a broken state waiting on a later commit to fix it. These commits are fine in development stages but *have* to be squashed before pulling into `master`.
+- While developing commits can contain broken code (failing tests, unlinted, broken functionality), as it would be too onerous and counterproductive to expect every commit to be fully atomic. Each commit in `master`, however, fully implements a functionality (barring unknown bugs), has a fully passing test suite, and can be built and deployed with every expectation that the code will function accordingly. All commits that do not meet these requirements are squashed before being pulled into `master`.
 - Changes that are not related should be split into separate commits. Bugfixes that are prerequisites to your change but not the main purpose of the change should be made in separate commits.
 - Make sure changes are rebased on latest `master`. Ensure your code is up-to-date with `master` to prevent merge conflicts.
 
