@@ -25,6 +25,7 @@ This is the checklist that needs to be undertaken for a new feature before a new
 - [ ] Check and resolve merge conflicts
 - [ ] Review PR in GitHub UI, this makes it much easier to check for miscellaneous print statements, debugging code, and any other silly mistakes
 - [ ] Remove any dead or unused code
+- [ ] Make sure you update `.env.example`, `requirements.txt`, etc. when the environment changes
 - [ ] Check all spelling and grammar within code
 - [ ] Ensure the variables have appropriate names, following convention
 - [ ] Does the PR reference the issue being resolved (e.g. `-#XYZ`)?
