@@ -3,8 +3,7 @@
 - 2 space indentation.
 - A list of HTML coding conventions for this project can be found on [Mark Otto’s website](http://codeguide.co/)
 
-
-- 120 character soft limit
+* 120 character soft limit
 
   - wrap text to 120 characters
 
@@ -15,7 +14,7 @@
        target="_blank" title="Title"
      >
       Anchor Text
-    </a>  
+    </a>
     ```
 
     rather than
@@ -27,5 +26,3 @@
     ```
 
   ​
-
-

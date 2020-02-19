@@ -55,8 +55,6 @@ Wrap lines to 80 characters. Lines should wrap to under their first parameter.
                                   "really-really-long"))
 ```
 
-
-
 ## List @extends First
 
 ```scss
@@ -79,10 +77,9 @@ Next up is your @includes for mixins and other functions. Again, this is nice to
 ## After that is your normal rules
 
 ```scss
-.weather
-  @extend .other-class
+.weather@extend .other-class
   @include transition(all 0.3 ease-out)
-  background: blue
+  background: blue;
 ```
 
 This allows us to override anything from the extends or the includes above.
@@ -112,22 +109,22 @@ Seperate these rules with a single line break. These line breaks should be empty
   @extends .other-class
   @include transition(all 0.3 ease-out)
   background: blue
-  
+
   &:hover
     background: red
-    
+
   &::before
     content: ""
     display: block
-    
+
   > div
     @include transform(rotate(90deg))
     border-bottom: 1px solid white
-    
+
     > h3
       display: block
       color: red
-    
+
   > p
     background: blue
 ```
@@ -144,7 +141,7 @@ Use @mixins whenever possible given to you by Bourbon.
 
 There is no penalty to splitting into many small files and this helps the readability of the code
 
-## Partials are named _partial.scss
+## Partials are named \_partial.scss
 
 This is a common naming convention that indicates this file isn't meant to be compiled by itself. It likely has dependencies that would make it impossible to compile by itself.
 
@@ -152,7 +149,7 @@ Seperate file names using a dash.
 
 ## Be Generous With Comments
 
-Use `//` to comment lines. Do not use end of comment lines. Most code should be self-explanatory but there's times where comments are definitely needed, when using `z-index` for example.  Space after `//` and always capitalize first letter.
+Use `//` to comment lines. Do not use end of comment lines. Most code should be self-explanatory but there's times where comments are definitely needed, when using `z-index` for example. Space after `//` and always capitalize first letter.
 
 ## Variablise All Colours
 

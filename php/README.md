@@ -1,7 +1,9 @@
 # <?php function styleguide() {
+
     /* A style guide that will make you go ['hip', 'hip']. */
 
 # Index
+
 - [PSR Overview](#psr-overview) <a name="properties"></a>
 - [Lines](#lines)
 - [Indentation](#indentation)
@@ -26,21 +28,24 @@
 - [Strings](#strings)
 
 ## Basic Coding Standards
+
 When writing PHP, always use a routing framework and a templating language.
 
 ## [§](#psr-overview) <a name="psr-overview"></a>PSR-1 Overview
-* Files must only use `<?php` tags. Ending tags should **always** be ommitted.
-* Files must use only UTF-8 without BOM and use Unix LF line ending.
-    * All PHP files must end with a single line, containing only a single newline (LF) character. This rule should not be overridden by any other rule in this document.
-* Files should either declare symbols (classes, functions, constants, etc.) or cause side-effects (e.g. generate output, change .ini settings, etc.) but should not do both.
-* Namespaces and classes must follow [PSR4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md)
-* Class names must use PascalCase.
-* Method names must use camelCase.
-* Constants must always be declared in all upper case with underscore separators.
+
+- Files must only use `<?php` tags. Ending tags should **always** be ommitted.
+- Files must use only UTF-8 without BOM and use Unix LF line ending.
+  - All PHP files must end with a single line, containing only a single newline (LF) character. This rule should not be overridden by any other rule in this document.
+- Files should either declare symbols (classes, functions, constants, etc.) or cause side-effects (e.g. generate output, change .ini settings, etc.) but should not do both.
+- Namespaces and classes must follow [PSR4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md)
+- Class names must use PascalCase.
+- Method names must use camelCase.
+- Constants must always be declared in all upper case with underscore separators.
 
 For examples of each of these please see [PSR1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md).
 
 ## [§](#lines) <a name="lines"></a>Lines
+
 There is not a hard limit on line length.
 
 The soft limit on line limit is 120 characters.
@@ -54,14 +59,17 @@ Blank lines may be used to improve readability.
 There must not be more than one statement per line.
 
 ## [§](#indentation) <a name="indentation"></a>Indentation
+
 All code must use 4 space indentation no matter what. Tabs must not be used under any circumstances.
 
 ## [§](#keywords) <a name="keywords"></a>Keywords
+
 PHP keywords must always be in lower case.
 
 The PHP types and keywords `array`, `int`, `true`, `object`, `float`, `false`, `mixed`, `bool`, `null`, `numeric`, `string`, `void` and `resource` must be in lower case.
 
 ## [§](#namespace-use) <a name="namespace-use"></a>Namespace and use statements
+
 When the opening `<?php` tag is on the first line of the file, it must be on its own line with no other statements unless it is a file containing markup outside of PHP opening and closing tags.
 
 There must be one blank line after the `namespace` declaration.
@@ -71,6 +79,7 @@ All `use` declarations must go after the `namespace` declaration.
 There must be one `use` keyword per declaration.
 
 ## [§](#classes-properties-methods) <a name="classes-properties-methods"></a>Classes, Properties and Methods
+
 The term "class" refers to all classes, interfaces, and traits.
 
 Starting braces if classes and methods must be on their own line directly after the body, they should not be followed by or preceded by a blank line.
@@ -103,7 +112,7 @@ Properties must be declared one per line. They must not be prefixed with a singl
 
 Visibility must be declared on all methods.
 
-Method names must be prefixed with a single underscore to indicate protected or private visibility. 
+Method names must be prefixed with a single underscore to indicate protected or private visibility.
 
 Method and function names must not be declared with a space after the method name.
 
@@ -151,23 +160,22 @@ Do not use `$this` in a static context.
 
 The general style rules for control structures are as follows:
 
-* There must be one space after the control structure keyword
-* There must not be a space after the opening parenthesis
-* There must not be a space before the closing parenthesis
-* There must be one space between the closing parenthesis and the opening brace
-* The structure body must be indented once
-* The closing brace must be on the next line after the body
+- There must be one space after the control structure keyword
+- There must not be a space after the opening parenthesis
+- There must not be a space before the closing parenthesis
+- There must be one space between the closing parenthesis and the opening brace
+- The structure body must be indented once
+- The closing brace must be on the next line after the body
 
 The body of each structure must be enclosed by braces. This standardizes how the structures look, and reduces the likelihood of introducing errors as new lines get added to the body.
 
-Always use `while` loops rather than `for` loops where possible. Stay away from C-style  `for (;;) {}` loops and sway towards `while (true)` loops. Prefer `foreach` over `for` for arrays always.
+Always use `while` loops rather than `for` loops where possible. Stay away from C-style `for (;;) {}` loops and sway towards `while (true)` loops. Prefer `foreach` over `for` for arrays always.
 
 ## [§](#abstract-final-static) <a name="abstract-final-static"></a>abstract, final, and static
 
 When present, the `abstract` and `final` declarations must follow the visibility declaration.
 
 When present, the `static` declaration must come before the `abstract` and `final` modifiers but after the visibility declaration.
-
 
 ## [§](#if-elseif-else) <a name="if-elseif-else"></a>if, elseif, else
 
@@ -187,12 +195,14 @@ The keyword `elseif` should be used instead of else if so that all control keywo
 
 ## [§](#switch-case) <a name="switch-case"></a>switch, case
 
-The case statement must be indented once from switch, and the break keyword (or other terminating keyword) must be indented at the same level as the case body. 
+The case statement must be indented once from switch, and the break keyword (or other terminating keyword) must be indented at the same level as the case body.
 
 ## [§](#operators) <a name="operators"></a>Operators
+
 All binary and ternary (but not unary) operators must be preceded and followed by at least one space. This includes all arithmetic, comparison, assignment, bitwise, logical (excluding `!` which is unary), string concatenation, and type operators.
 
 ## [§](#closures) <a name="closures"></a>Closures
+
 Closures must be declared with a space after the `function` keyword, and a space before and after the `use` keyword.
 
 The opening brace must go on the same line, and the closing brace must go on the next line following the body.

@@ -2,13 +2,11 @@
 
 Our Git workflow is structurally similar to the ['Gitflow' workflow](http://nvie.com/posts/a-successful-git-branching-model/), also see the [Atlassian write up](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). We have modified this workflow, prioritizing a clean and simple git history.
 
- One major difference is that we have removed the `develop` branch. Instead we use `master` as our `develop` branch and tag commits once we have reached a production ready state. There appears to be only one disadvantages to removing the `develop` branch in this way. This is addressed in the [Rebasing](#rebasing) section.
+One major difference is that we have removed the `develop` branch. Instead we use `master` as our `develop` branch and tag commits once we have reached a production ready state. There appears to be only one disadvantages to removing the `develop` branch in this way. This is addressed in the [Rebasing](#rebasing) section.
 
 Another major difference is that we do not allow any merge commits in our `master` branch. The 'Gitflow' workflow prioritizes `feature/` and `bugfix/`branches as sources of truth. In the 'Gitflow' model merge commits make debugging botched features and bugfixes simple, as it is obvious where the feature is implemented.
 
 In our model `feature/` and `bugfix/` branches are rebased and squashed directly on top of `master` and each commit represents a full implementation of the feature or bugfix. The realization here is that commits within `feature/` and `bugfix/` branches, although relevant to the author while developing and perhaps the reviewer, reviewing the PR, are irrelevant to the long term git history. Said otherwise, the benefit of including hundreds of these development commits is far smaller to the benefit of having a clear and succinct git history, provided `feature/` and `bugfix/` branches are focused and well defined.
-
-
 
 ## Branches
 
@@ -40,8 +38,6 @@ Examples:
 - `release/initial-public-launch-v1.0.0`
 - `hotfix/user-session-dropping-v0.0.3`
 
-
-
 ## Issues
 
 If you come across a bug or think of a missing feature, create an issue.
@@ -51,7 +47,7 @@ If you come across a bug or think of a missing feature, create an issue.
 
 ## Labels
 
-Labels are used to categorize issues and pull requests.  Use labels liberally, so long as they meet the descriptions below, as they serve to provide better and more readily available information regarding labeled items.
+Labels are used to categorize issues and pull requests. Use labels liberally, so long as they meet the descriptions below, as they serve to provide better and more readily available information regarding labeled items.
 
 #### Priority
 
@@ -71,7 +67,7 @@ Used in reviewing PRs. See below section on Pull Requests for more in depth exam
 #### Blocking
 
 - `blocked`: Used when an issue is unable to be addressed before another issue is resolved. The blocking issue must be referenced in the `blocked`
-   issue.
+  issue.
 
 #### Category
 
