@@ -26,7 +26,7 @@ This is the checklist that needs to be undertaken for a new feature before a new
 - [ ] Format and lint code
 - [ ] Run tests locally
 - [ ] Ensure CI tests pass
-- [ ] Ensure commit messages are succinct
+- [ ] Ensure commit messages are succinct and reference any relevant issues
 - [ ] Check and resolve merge conflicts
 - [ ] Review PR in GitHub UI, this makes it much easier to check for miscellaneous print statements, debugging code, and any other silly mistakes
 - [ ] Remove any dead or unused code
